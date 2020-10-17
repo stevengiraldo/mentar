@@ -58,11 +58,11 @@
 		});
 
 		//open search form
-		$('.cd-search-trigger').on('click', function(event){
-			event.preventDefault();
-			toggleSearch();
-			closeNav();
-		});
+		// $('.cd-search-trigger').on('click', function(event){
+		// 	event.preventDefault();
+		// 	toggleSearch();
+		// 	closeNav();
+		// });
 
 		//close lateral menu on mobile 
 		$('.cd-overlay').on('swiperight', function(){
@@ -295,6 +295,26 @@
 				}
 			});
 		});
+
+	//Full Accordion	
+	
+	jQuery(document).ready(function($){
+		$(".accordion").smk_Accordion({
+			closeAble: true 
+		});
+	});
+
+	//Blockquote
+	 
+	$("#owl-blockquotes").owlCarousel({
+		 
+		navigation: false,
+		pagination:false, 
+		slideSpeed : 300,
+		autoPlay : 5000,
+		singleItem:true
+	 
+	  });
 	});
 	
 	
