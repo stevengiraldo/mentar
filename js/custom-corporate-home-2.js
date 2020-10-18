@@ -317,6 +317,9 @@
 	  });
 	});
 	
+		//Responsive video
+	
+		$(".container").fitVids();
 	
 	
   })(jQuery); 
