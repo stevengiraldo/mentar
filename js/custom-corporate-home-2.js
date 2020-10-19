@@ -1,15 +1,4 @@
 (function($) { "use strict";
-
-	//Home Sections fit screen	
-				
-		/*global $:false */
-		$(function(){"use strict";
-			$('.home').css({'height':($(window).height())+'px'});
-			$(window).resize(function(){
-			$('.home').css({'height':($(window).height())+'px'});
-			});
-		});
-		
 		
 	//Page Scroll
 	
