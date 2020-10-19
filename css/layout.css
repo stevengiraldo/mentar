@@ -952,6 +952,14 @@ support for no js
     max-width: initial;
   }
 }
+@media only screen and (max-width: 768px) {
+#video-promo {
+  padding-top: 0;
+}
+#video-promo .container, #video-promo .sixteen.columns {
+  margin: 0;
+  width: 100%;
+}
 }
 .border-text{
 	border:5px solid #212121;
@@ -6167,9 +6175,8 @@ a.quote-big-post-single h5:hover{
 }
 .error {
 	font: 10px/22px 'Open Sans', sans-serif;
-	text-transform:uppercase;
 	display: none;
-	color:#101010;
+	color:#ff835c;
 }
 #ajaxsuccess {
 	background: #f5f5f5;
@@ -6997,7 +7004,7 @@ a.quote-big-post-single h5:hover{
 	line-height: 22px;
 	text-align:center;
 	z-index:6;
-	padding-right:20px;
+	padding-right:6px;
 } 
 .social-bottom{ 
 	position:relative;
@@ -7889,7 +7896,7 @@ Main components
 	text-align:center;
 	line-height:40px;
 	font-size:14px;
-	color:#fff;
+	color:#6D6E71;
   top: 0;
   left: 0;
   width: 40px;
@@ -9081,6 +9088,9 @@ Main components
     overflow: visible;
     z-index: 300000;
   }
+  .cd-primary-nav li:first-child {
+    visibility: hidden;
+  }
   .cd-primary-nav ul.is-hidden {
     /* reset mobile style */
     -webkit-transform: translateX(0);
@@ -9108,13 +9118,12 @@ Main components
     display: inline-block;
 	font-family: 'Lato', sans-serif;
 	font-weight:400;
-	text-transform: uppercase;
 	letter-spacing:2px;
-	font-size: 12px;
+	font-size: 14px;
     height: 80px;
     line-height: 80px;
     padding: 0 10px;
-    color: #2e3233;
+    color: #6D6E71;
     overflow: visible;
     border-bottom: none;
     -webkit-transition: color 0.3s, box-shadow 0.3s;
