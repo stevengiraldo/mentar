@@ -242,7 +242,7 @@ a.arrow-down:hover{
 .button-map:hover {
 	background:#C6E0B4;
 }
-#button-con button:hover{
+#button-con input:hover{
 	border:2px solid #C6E0B4;
 	background: #C6E0B4;
 }
