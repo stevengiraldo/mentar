@@ -291,7 +291,7 @@ a.arrow-down:hover{
 }
 @media only screen and (min-width: 1170px) {
   .cd-primary-nav > li > a:hover {
-    color: #C6E0B4;
+    color: #fff;
   }
   .cd-primary-nav > li > a.selected {
     color: #C6E0B4;

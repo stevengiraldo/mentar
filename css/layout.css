@@ -1135,7 +1135,9 @@ a.arrow-down:hover{
 	text-align:center;
 	font-size: 16px;
 	color:#606060;
-	letter-spacing:2px;
+  letter-spacing:2px;
+  max-width: 960px;
+  margin: 0 auto;
 	/* text-transform: uppercase; */
 }
 .subtitle.white {
@@ -5070,7 +5072,9 @@ a.quote-big-post-single h5:hover{
 	text-align:center;
 	font-family: 'Lato', sans-serif;
 	font-weight:400;
-	font-size:16px;
+  font-size:16px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 .blockquotes-1 p span{ 
 	font-weight:700;
@@ -6251,6 +6255,12 @@ a.quote-big-post-single h5:hover{
 #button-con button:hover{
 	color: #fff;
 }
+
+/* @media only screen and (min-width: 850px) {
+  #ajax-form, #ajax-form input, #ajax-form textarea, #ajaxsuccess {
+    width: 50%;
+  }
+} */
 
 
 #google_map {
