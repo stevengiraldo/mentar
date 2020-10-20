@@ -41,17 +41,9 @@
 				$('.cd-main-content').addClass('nav-is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 					$('body').addClass('overflow-hidden');
 				});
-				toggleSearch('close');
 				$('.cd-overlay').addClass('is-visible');
 			}
 		});
-
-		//open search form
-		// $('.cd-search-trigger').on('click', function(event){
-		// 	event.preventDefault();
-		// 	toggleSearch();
-		// 	closeNav();
-		// });
 
 		//close lateral menu on mobile 
 		$('.cd-overlay').on('swiperight', function(){
@@ -72,32 +64,6 @@
 			$('.cd-overlay').removeClass('is-visible');
 		});
 
-
-		//prevent default clicking on direct children of .cd-primary-nav 
-		$('.cd-primary-nav').children('.has-children').children('a').on('click', function(event){
-			event.preventDefault();
-		});
-		//open submenu
-		$('.has-children').children('a').on('click', function(event){
-			if( !checkWindowWidth() ) event.preventDefault();
-			var selected = $(this);
-			if( selected.next('ul').hasClass('is-hidden') ) {
-				//desktop version only
-				selected.addClass('selected').next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('moves-out');
-				selected.parent('.has-children').siblings('.has-children').children('ul').addClass('is-hidden').end().children('a').removeClass('selected');
-				$('.cd-overlay').addClass('is-visible');
-			} else {
-				selected.removeClass('selected').next('ul').addClass('is-hidden').end().parent('.has-children').parent('ul').removeClass('moves-out');
-				$('.cd-overlay').removeClass('is-visible');
-			}
-			toggleSearch('close');
-		});
-
-		//submenu items - go back link
-		$('.go-back').on('click', function(){
-			$(this).parent('ul').addClass('is-hidden').parent('.has-children').parent('ul').removeClass('moves-out');
-		});
-
 		function closeNav() {
 			$('.cd-nav-trigger').removeClass('nav-is-visible');
 			$('.cd-main-header').removeClass('nav-is-visible');
@@ -108,20 +74,6 @@
 			$('.cd-main-content').removeClass('nav-is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 				$('body').removeClass('overflow-hidden');
 			});
-		}
-
-		function toggleSearch(type) {
-			if(type=="close") {
-				//close serach 
-				$('.cd-search').removeClass('is-visible');
-				$('.cd-search-trigger').removeClass('search-is-visible');
-			} else {
-				//toggle search visibility
-				$('.cd-search').toggleClass('is-visible');
-				$('.cd-search-trigger').toggleClass('search-is-visible');
-				if($(window).width() > MqL && $('.cd-search').hasClass('is-visible')) $('.cd-search').find('input[type="search"]').focus();
-				($('.cd-search').hasClass('is-visible')) ? $('.cd-overlay').addClass('is-visible') : $('.cd-overlay').removeClass('is-visible') ;
-			}
 		}
 
 		function checkWindowWidth() {
@@ -150,119 +102,6 @@
 				navigation.insertAfter('.cd-main-content');
 			}
 		}
-
-
-	
-			//Slider Revolution
-			
-
-								
-					jQuery('.tp-banner').show().revolution(
-					{
-						dottedOverlay:"none",
-						delay:6000,
-						startwidth:1460,
-						startheight:700,
-						hideThumbs:false,
-						hideTimerBar:"on",
-						
-						navigationType:"none",
-						navigationArrows:"solo",
-						navigationStyle:"preview4",
-						
-						touchenabled:"on",
-						onHoverStop:"off",
-						
-						swipe_velocity: 0.7,
-						swipe_min_touches: 1,
-						swipe_max_touches: 1,
-						drag_block_vertical: false,
-												
-						keyboardNavigation:"off",
-						
-						navigationHAlign:"center",
-						navigationVAlign:"bottom",
-						navigationHOffset:0,
-						navigationVOffset:30,
-								
-						shadow:0,
-						fullWidth:"on",
-						fullScreen:"on",
-
-						spinner:"spinner4",
-						
-						stopLoop:"off",
-						stopAfterLoops:-1,
-						stopAtSlide:-1,
-
-						shuffle:"off",
-						
-						autoHeight:"off",						
-						forceFullWidth:"off",		
-					});
-														
-	
- 
-	
-	//Parallax
-
-			$('.parallax-3').parallax("50%", 0.4);
-
-  
-  
-	//Counter 
-	
-
-        $('.counter').counterUp({
-            delay: 100,
-            time: 2000
-        });
-
-
-
-	 // Logos Carousel
-
-
-	 
-	  var owl = $("#owl-logos");
-	 
-	  owl.owlCarousel({
-		 
-		  itemsCustom : [
-			[0, 2],
-			[450, 2],
-			[600, 2],
-			[700, 3],
-			[1000, 4],
-			[1200, 4],
-			[1400, 4],
-			[1600, 4]
-		  ],
-		navigation : false,
-		pagination: false,
-		autoPlay: 2000
-	 
-	  });
-	 
-
-	
-	
-	 // Office Carousel
-	 
-
-	 
-	  $("#owl-office").owlCarousel({
-		 
-		navigation: false,
-		pagination:false, 
-		slideSpeed : 300,
-		autoPlay : 4000,
-		singleItem:true
-	 
-	  });
-	 
-
-
  
 	//Timeline	
  
@@ -286,11 +125,8 @@
 		});
 
 	//Full Accordion	
-	
-	jQuery(document).ready(function($){
-		$(".accordion").smk_Accordion({
-			closeAble: true 
-		});
+	$(".accordion").smk_Accordion({
+		closeAble: true 
 	});
 
 	//Blockquote
@@ -309,6 +145,65 @@
 		//Responsive video
 	
 		$(".container").fitVids();
+
+	
+	// Contact
+	$('#send').click(function(){ // when the button is clicked the code executes
+		$('.error').fadeOut('slow'); // reset the error messages (hides them)
+
+		var error = false; // we will set this true if the form isn't valid
+
+		var name = $('input#name').val(); // get the value of the input field
+		if(name == "" || name == " ") {
+			$('#err-name').fadeIn('slow'); // show the error message
+			error = true; // change the error state to true
+		}
+
+		var tel = $('input#tel').val(); // get the value of the input field
+		if(tel == "" || tel == " ") {
+			$('#err-tel').fadeIn('slow'); // show the error message
+			error = true; // change the error state to true
+		}
+
+		var email_compare = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/; // Syntax to compare against input
+		var email = $('input#email').val(); // get the value of the input field
+		if (email == "" || email == " ") { // check if the field is empty
+			$('#err-email').fadeIn('slow'); // error - empty
+			error = true;
+		}else if (!email_compare.test(email)) { // if it's not empty check the format against our email_compare variable
+			$('#err-emailvld').fadeIn('slow'); // error - not right format
+			error = true;
+		}
+
+		if(error == true) {
+			$('#err-form').slideDown('slow');
+			return false;
+		}
+
+		var data_string = $('#ajax-form').serialize(); // Collect data from form
+
+		$.ajax({
+			type: "POST",
+			url: $('#ajax-form').attr('action'),
+			data: data_string,
+			timeout: 6000,
+			error: function(request,error) {
+				if (error == "timeout") {
+					$('#err-timedout').slideDown('slow');
+				}
+				else {
+					$('#err-state').slideDown('slow');
+					$("#err-state").html('Ha ocurrido un error: ' + error + '');
+				}
+			},
+			success: function() {
+				$('#ajax-form').slideUp('slow');
+				$('#ajaxsuccess').slideDown('slow');
+			}
+		});
+
+		return false; // stops user browser being directed to the php file
+	}); // end click function
 	
 	
   })(jQuery); 
