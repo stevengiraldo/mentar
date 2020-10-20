@@ -6153,7 +6153,6 @@ a.quote-big-post-single h5:hover{
 	width: 100%;
 	border:none;
 	font-weight:400;
-	text-transform:uppercase;
 	letter-spacing:2px;
 	font-size: 12px;
 	line-height:22px;
@@ -6163,7 +6162,6 @@ a.quote-big-post-single h5:hover{
 #ajax-form textarea {
 	width:100%;
 	font-weight:400;
-	text-transform:uppercase;
 	letter-spacing:2px;
 	font-size: 12px;
 	line-height:22px;
