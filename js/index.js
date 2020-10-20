@@ -11,9 +11,9 @@
 			var parts = full_url.split("#");
 			var trgt = parts[1];
 			var target_offset = $("#"+trgt).offset();
-			var target_top = target_offset.top;
+			var target_top = target_offset.top - 50;
 
-			$('html, body').animate({scrollTop:target_top}, 1000);
+			$('html, body').animate({scrollTop:target_top}, 500);
 		});
 
 	
