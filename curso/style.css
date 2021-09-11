@@ -1,0 +1,631 @@
+:root {
+  --Verde-claro: #74c49c;
+  --Verde-oscuro: #63a07f;
+  --gris: #6d6e70;
+  --letra-gris: #808080;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1.4rem;
+}
+
+button:hover {
+  background-color: var(--Verde-claro);
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background: var(--Verde-claro);
+}
+
+header img {
+  width: 90px;
+  height: auto;
+  margin-left: 34px;
+  align-self: center;
+}
+
+.content-video {
+  display: grid;
+  grid-template: repeat(10, 30px) / repeat(10, 1fr);
+  height: auto;
+  max-width: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  margin-block-start: 41px;
+  margin-block-end: -19px;
+}
+
+.content-video img {
+  height: 207px;
+  width: 234px;
+  grid-column: 3/9;
+  grid-row: 2/2;
+  justify-self: center;
+  max-width: 100%;
+  min-width: 58%;
+}
+
+.content-video p {
+  grid-column: 3/9;
+  grid-row: 1/2;
+  margin-block-start: 8px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  color: var(--Verde-claro);
+  text-align: center;
+  font-size: calc(0.4rem + 1vw);
+}
+
+.video {
+  padding: 25px;
+  height: 100vh;
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(3, 1fr);
+}
+
+.video iframe {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  width: 90%;
+  height: 100%;
+  justify-self: center;
+}
+
+.oferta {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.oferta h1 {
+  margin: 10px 0px 15px;
+  color: var(--Verde-oscuro);
+  font-weight: 900;
+  line-height: 2rem;
+  font-family: "Lato", sans-serif;
+  font-size: 2.2rem;
+}
+
+.oferta h3 {
+  margin-bottom: 18px;
+  color: var(--Verde-claro);
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.oferta p {
+  margin: 0 auto;
+  color: var(--Verde-claro);
+  font-family: "Lato", sans-serif;
+  text-align: unset;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  max-width: 45%;
+  font-size: 16px;
+}
+
+.promo {
+  margin-top: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background: var(--Verde-claro);
+  color: white;
+}
+
+.promo h3 {
+  font-family: "Lato", sans-serif;
+  max-width: 386px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.learn {
+  width: 100%;
+}
+
+.learn h3:first-child {
+  font-size: 1rem;
+}
+
+.learn h3 {
+  width: 100%;
+  margin: 40px 0px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: var(--Verde-claro);
+}
+
+.learn .modulos {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  color: var(--letra-gris);
+  font-size: 0.7rem;
+}
+
+.learn .modulos .content-modul {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 80%;
+  min-width: 69%;
+  align-self: center;
+  width: 285px;
+}
+
+.learn .modulos .nike {
+  width: 25px;
+  height: 25px;
+  display: block;
+  background-image: url(assets-curso/cheque2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-self: baseline;
+}
+
+.values h3 {
+  font-size: 0.8rem !important;
+  width: 100%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.oficcial {
+  color: var(--Verde-claro);
+}
+
+.oficcial b {
+  text-decoration-line: line-through;
+}
+
+.lanzamiento {
+  color: var(--Verde-oscuro) !important;
+}
+
+.buy {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.buy button {
+  width: 160px;
+  height: 40px;
+  padding-top: 1px;
+  align-self: center;
+  background: var(--Verde-oscuro);
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  border-color: var(--gris);
+  border-style: solid;
+  cursor: pointer;
+}
+
+.beneficios {
+  background: var(--Verde-oscuro);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 27px;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+}
+
+.cards .item {
+  width: 460px;
+  min-width: 50%;
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  background: white;
+  margin-top: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.cards .item img {
+  margin-top: 30px;
+}
+
+.cards .item h4 {
+  margin-top: 20px;
+  color: var(--letra-gris);
+  font-weight: bold;
+}
+
+.cards .item p {
+  margin: 10px 20px 30px 20px;
+  color: var(--letra-gris);
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.yes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 50px 0px;
+}
+
+.yes button {
+  width: 260px;
+  height: 40px;
+  padding-top: 1px;
+  align-self: center;
+  background: var(--Verde-oscuro);
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  border-color: var(--gris);
+  border-style: solid;
+  cursor: pointer;
+}
+
+.yes h4 {
+  color: var(--Verde-claro);
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+footer {
+  width: 100%;
+  background: var(--gris);
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+footer .container {
+  padding: 35px 0px;
+}
+
+footer .container .icons-footer span {
+  width: 20px;
+  height: 20px;
+}
+
+footer .gmail {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+footer .gmail .msj {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  background-image: url(assets-curso/carta.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .derechos {
+  width: 300px;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+footer .derechos p {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.footer-container-logo {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.logo-footer {
+  background-image: url(assets-curso/Imagen-07.png);
+  width: 105px;
+  height: 58px;
+  text-align: center;
+  margin: 0 auto;
+  background-size: 105px 58px;
+  z-index: 10;
+}
+
+.instagram {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url(assets-curso/logotipo-de-instagram.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.facebook {
+  display: block;
+  background-image: url(assets-curso/facebook.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carta {
+  display: block;
+  background-image: url(assets-curso/avion-de-papel.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wpp {
+  display: block;
+  background-image: url(assets-curso/whatsapp.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icons-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  margin-bottom: 22px;
+}
+
+@media all and (max-width: 600px) {
+  .video {
+    height: 61vh;
+  }
+
+  .oferta h1 {
+    font-size: 1.9rem;
+  }
+
+  .oferta h3 {
+    font-size: 1.1rem;
+  }
+
+  .oferta p {
+    max-width: 90%;
+  }
+
+  .promo h3 {
+    max-width: 236px;
+    font-size: 1.1rem;
+  }
+
+  footer .container img {
+    max-width: 43%;
+  }
+
+  .learn .modulos .nike {
+    min-width: 30px;
+    min-height: 30px;
+  }
+}
+
+@media all and (min-width: 735px) {
+  .learn .modulos .content-modul {
+    max-width: 64%;
+    min-width: 50%;
+  }
+}
+
+@media all and (min-width: 915px) {
+  .learn .modulos .content-modul {
+    max-width: 64%;
+    min-width: 36%;
+  }
+}
+
+@media only screen and (max-width: 417px) {
+  header {
+    height: 40px;
+  }
+
+  header img {
+    margin-left: 20px;
+    align-self: center;
+  }
+
+  .content-video {
+    margin-block-start: 25px;
+    margin-block-end: 0px;
+    grid-template: repeat(4, 28px) / repeat(10, 1fr);
+  }
+
+  .content-video p {
+    margin-block-start: 0px;
+    grid-column: 1/11;
+    white-space: pre;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .content-video img {
+    height: 112px;
+    width: 210px;
+    grid-column: 2/10;
+    grid-row: 1/4;
+    margin-block-start: 10px;
+  }
+
+  .video {
+    height: 35vh;
+    margin-top: 20px;
+    padding: initial;
+  }
+
+  .video iframe {
+    width: 100%;
+  }
+
+  .oferta h1 {
+    margin: 30px 0px 0px;
+    font-size: 21px;
+    line-height: inherit;
+  }
+
+  .oferta h3 {
+    margin-bottom: 5px;
+    font-size: 17px;
+    white-space: pre;
+  }
+
+  .oferta p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: normal;
+  }
+
+  .promo {
+    margin-top: 30px;
+    padding: 25px 0px;
+  }
+
+  .promo h3 {
+    font-size: 19px;
+  }
+
+  .learn h3 {
+    margin: 30px 0px 25px;
+    font-size: 17px;
+  }
+
+  .learn .modulos .content-modul {
+    max-width: 70%;
+    font-size: 12px;
+    white-space: pre;
+  }
+
+  .learn .modulos .nike {
+    min-width: 20px;
+    min-height: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .learn .values h3 {
+    margin: 25px 0px 25px;
+    font-size: 15px;
+  }
+
+  .buy {
+    margin-bottom: 30px;
+  }
+
+  .buy button {
+    width: 140px;
+    height: 40px;
+    padding: 9px;
+    font-size: 17px;
+  }
+
+  .beneficios {
+    padding: 20px 0px;
+  }
+
+  .cards .item {
+    height: 190px;
+    width: 310px;
+    max-width: 90%;
+  }
+  .cards .item img {
+    margin-top: 15px;
+  }
+
+  .cards .item p {
+    margin: 7px 20px 15px 20px;
+    font-size: 12px;
+  }
+
+  .cards .item h4 {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .yes {
+    margin: 30px 0px;
+  }
+
+  .yes button {
+    width: 300px;
+    height: 40px;
+    padding: 9px;
+    font-size: 17px;
+  }
+
+  .yes h4 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 343px) {
+  .learn .modulos .content-modul {
+    max-width: 75%;
+    white-space: normal;
+  }
+}
+
+@media only screen and (min-width: 419px) {
+  .content-video img {
+    height: 174px;
+    width: 240px;
+    grid-column: 3/9;
+    min-width: 50%;
+  }
+
+  .content-video p {
+    grid-column: 3/9;
+    margin-block-start: 16px;
+    font-size: 14px;
+    white-space: pre;
+  }
+  .content-video {
+    grid-template: repeat(7, 30px) / repeat(10, 1fr);
+    margin-block-start: 15px;
+    margin-block-end: -19px;
+  }
+}
+
+@media only screen and (min-width: 1110px) {
+  .content-video img {
+    height: 186px;
+    min-width: 46%;
+  }
+}
