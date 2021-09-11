@@ -174,7 +174,7 @@ header img {
   width: 25px;
   height: 25px;
   display: block;
-  background-image: url(assets-cursopregrabado/cheque2.svg);
+  background-image: url(assets-curso/cheque2.svg);
   background-repeat: no-repeat;
   background-size: cover;
   align-self: baseline;
@@ -334,7 +334,7 @@ footer .gmail .msj {
   width: 20px;
   height: 20px;
   margin-right: 4px;
-  background-image: url(assets-cursopregrabado/carta.svg);
+  background-image: url(assets-curso/carta.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -360,7 +360,7 @@ footer .derechos p {
 }
 
 .logo-footer {
-  background-image: url(./assets-cursopregrabado/Imagen-07.png);
+  background-image: url(assets-curso/Imagen-07.png);
   width: 105px;
   height: 58px;
   text-align: center;
@@ -373,28 +373,28 @@ footer .derechos p {
   display: block;
   width: 25px;
   height: 25px;
-  background-image: url(assets-cursopregrabado/logotipo-de-instagram.svg);
+  background-image: url(assets-curso/logotipo-de-instagram.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .facebook {
   display: block;
-  background-image: url(assets-cursopregrabado/facebook.svg);
+  background-image: url(assets-curso/facebook.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .carta {
   display: block;
-  background-image: url(assets-cursopregrabado/avion-de-papel.svg);
+  background-image: url(assets-curso/avion-de-papel.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .wpp {
   display: block;
-  background-image: url(assets-cursopregrabado/whatsapp.svg);
+  background-image: url(assets-curso/whatsapp.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
