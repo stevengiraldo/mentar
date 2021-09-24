@@ -68,7 +68,7 @@ header img {
 }
 
 .video {
-  padding: 25px;
+  padding: 20px;
   height: 100vh;
   display: grid;
   grid-template: repeat(2, auto) / repeat(3, 1fr);
@@ -89,7 +89,7 @@ header img {
 }
 
 .oferta h1 {
-  margin: 10px 0px 15px;
+  margin: 50px 0px 15px;
   color: var(--azul-oscuro);
   font-weight: 900;
   line-height: 2rem;
@@ -107,7 +107,7 @@ header img {
 }
 
 .oferta p {
-  margin: 0 auto;
+  margin: 0 auto 50px;
   color: var(--azul-oscuro);
   font-family: "Lato", sans-serif;
   text-align: unset;
@@ -146,15 +146,23 @@ header img {
 }
 
 .learn h3:first-child {
-  font-size: 1rem;
+  font-size: 20px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: var(--azul-claro);
 }
 
 .learn h3 {
   width: 100%;
-  margin: 40px 0px;
+  margin: 40px 0px 6px;
   text-align: center;
   font-family: "Lato", sans-serif;
   color: var(--azul-claro);
+}
+
+.second-modul {
+  margin-top: 30px !important;
 }
 
 .learn .modulos {
@@ -167,6 +175,7 @@ header img {
   font-family: "Lato", sans-serif;
   color: var(--letra-gris);
   font-size: 0.7rem;
+  margin-top: 50px;
 }
 
 .learn .modulos .content-modul {
@@ -179,18 +188,40 @@ header img {
   width: 285px;
 }
 
-.learn .modulos .nike {
+.content-modul .especific-information {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-modul .especific-information p:first-child {
+  white-space: pre;
+}
+
+.content-modul .especific-information p:nth-child(2) {
+  color: var(--azul-claro);
+}
+
+.learn .modulos .nike,
+.heart {
   width: 25px;
   height: 25px;
   display: block;
-  background-image: url(assets-curso/cheque2.svg);
   background-repeat: no-repeat;
   background-size: cover;
   align-self: baseline;
 }
 
+.learn .modulos .nike {
+  background-image: url(assets-curso/cheque2.svg);
+}
+
+.learn .modulos .heart {
+  background-image: url(assets-curso/corazones.png);
+}
+
 .values h5 {
-  font-size: 0.7rem;
+  margin-bottom: 25px;
 }
 
 .values h3 {
@@ -234,13 +265,18 @@ header img {
   cursor: pointer;
 }
 
-.beneficios {
+.beneficios,
+.content-course {
   background: var(--azul-claro);
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   padding: 27px;
+}
+
+.content-course {
+  background: var(--azul-oscuro) !important;
 }
 
 .cards {
@@ -310,11 +346,13 @@ header img {
   cursor: pointer;
 }
 
-.yes h5 {
+.yes h5,
+.values h5 {
   color: var(--azul-oscuro);
   font-family: "Lato", sans-serif;
   font-weight: 100;
-  font-size: 17px;
+  font-size: 14px;
+  text-align: center;
 }
 
 footer {
@@ -369,7 +407,7 @@ footer .derechos p {
 
 .footer-container-logo {
   width: 300px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .logo-footer {
@@ -378,7 +416,8 @@ footer .derechos p {
   height: 58px;
   text-align: center;
   margin: 0 auto;
-  background-size: 105px 58px;
+  background-size: 110px 65px;
+  background-repeat: no-repeat;
   z-index: 10;
 }
 
@@ -422,7 +461,7 @@ footer .derechos p {
 
 @media all and (max-width: 600px) {
   .video {
-    height: 61vh;
+    height: 60vh;
   }
 
   .oferta h1 {
@@ -439,30 +478,26 @@ footer .derechos p {
 
   .promo h3 {
     max-width: 236px;
-    font-size: 1.1rem;
+    font-size: 23px;
+    white-space: pre;
   }
 
   footer .container img {
     max-width: 43%;
   }
 
-  .learn .modulos .nike {
+  .learn .modulos .nike,
+  .heart {
     min-width: 30px;
     min-height: 30px;
   }
-}
 
-@media all and (min-width: 735px) {
-  .learn .modulos .content-modul {
-    max-width: 64%;
-    min-width: 50%;
+  .content-video img {
+    min-width: 54% !important;
   }
-}
 
-@media all and (min-width: 915px) {
   .learn .modulos .content-modul {
-    max-width: 64%;
-    min-width: 36%;
+    min-width: 80%;
   }
 }
 
@@ -483,24 +518,24 @@ footer .derechos p {
   }
 
   .content-video p {
-    margin-block-start: 0px;
+    margin-block-start: -20px;
     grid-column: 1/11;
+    grid-row: 2;
     white-space: pre;
     font-size: 12px;
     letter-spacing: 1px;
   }
 
   .content-video img {
-    height: 112px;
-    width: 210px;
-    grid-column: 2/10;
+    height: 98px;
+    width: 330px;
+    grid-column: 1/11;
     grid-row: 1/4;
-    margin-block-start: 10px;
+    margin-block-start: 4px;
   }
 
   .video {
     height: 35vh;
-    margin-top: 20px;
     padding: initial;
   }
 
@@ -524,6 +559,7 @@ footer .derechos p {
     font-size: 12px;
     letter-spacing: 1px;
     font-weight: normal;
+    margin-bottom: 30px;
   }
 
   .promo {
@@ -541,12 +577,13 @@ footer .derechos p {
   }
 
   .learn .modulos .content-modul {
-    max-width: 70%;
+    max-width: 80%;
     font-size: 12px;
     white-space: pre;
   }
 
-  .learn .modulos .nike {
+  .learn .modulos .nike,
+  .heart {
     min-width: 20px;
     min-height: 20px;
     width: 20px;
@@ -554,7 +591,7 @@ footer .derechos p {
   }
 
   .learn .values h3 {
-    margin: 25px 0px 25px;
+    /* margin: 25px 0px 6px; */
     font-size: 15px;
   }
 
@@ -569,7 +606,8 @@ footer .derechos p {
     font-size: 17px;
   }
 
-  .beneficios {
+  .beneficios,
+  .content-course {
     padding: 20px 0px;
   }
 
@@ -610,35 +648,77 @@ footer .derechos p {
 
 @media only screen and (max-width: 343px) {
   .learn .modulos .content-modul {
-    max-width: 75%;
+    max-width: 90%;
     white-space: normal;
   }
 }
 
-@media only screen and (min-width: 419px) {
+@media only screen and (min-width: 418px) {
+  .content-video {
+    grid-template: repeat(5, 30px) / repeat(10, 1fr);
+    margin-block-start: 15px;
+    margin-block-end: -19px;
+  }
+
   .content-video img {
-    height: 174px;
-    width: 240px;
-    grid-column: 3/9;
+    height: 95px;
+    width: 228px;
+    grid-column: 1/11;
+    grid-row: 2/5;
     min-width: 50%;
+    margin-block-start: -0px;
   }
 
   .content-video p {
     grid-column: 3/9;
-    margin-block-start: 16px;
-    font-size: 14px;
+    margin-block-start: 2px;
+    font-size: 16px;
     white-space: pre;
+    grid-row: 2;
   }
+}
+
+@media all and (min-width: 735px) {
+  .learn .modulos .content-modul {
+    max-width: 64%;
+    min-width: 55%;
+  }
+
   .content-video {
-    grid-template: repeat(7, 30px) / repeat(10, 1fr);
-    margin-block-start: 15px;
-    margin-block-end: -19px;
+    grid-template: repeat(5, 30px) / repeat(10, 1fr);
+  }
+
+  .content-video img {
+    height: 110px;
+    min-width: 42%;
+    margin-block-start: -5px;
+  }
+}
+
+@media all and (min-width: 915px) {
+  .learn .modulos .content-modul {
+    max-width: 64%;
+    min-width: 45%;
+  }
+
+  .content-video {
+    grid-template: repeat(5, 30px) / repeat(10, 1fr);
+  }
+
+  .content-video img {
+    height: 112px;
+    min-width: 36%;
+    margin-block-start: -4px;
   }
 }
 
 @media only screen and (min-width: 1110px) {
   .content-video img {
-    height: 186px;
-    min-width: 46%;
+    height: 120px;
+    min-width: 30%;
+  }
+
+  .learn .modulos .content-modul {
+    min-width: 33%;
   }
 }
