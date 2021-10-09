@@ -163,6 +163,7 @@ header img {
 
 .second-modul {
   margin-top: 30px !important;
+  margin-bottom: 30px !important;
 }
 
 .learn .modulos {
@@ -236,7 +237,7 @@ header img {
 }
 
 .oficcial b {
-  text-decoration-line: line-through;
+  /* text-decoration-line: line-through; */
 }
 
 .lanzamiento {
