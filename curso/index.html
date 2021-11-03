@@ -26,6 +26,7 @@
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '602506151170433'); 
         fbq('track', 'PageView');
+        fbq('track', 'ViewContent');
 	</script>
 	<noscript>
         <img height="1" width="1" 
@@ -119,7 +120,7 @@
         </div>
 
         <div class="buy">
-            <button onclick="location.href='https://payment.hotmart.com/V58884478N?checkoutMode=10'">COMPRAR</button>
+            <button onclick="location.href='https://payment.hotmart.com/V58884478N?checkoutMode=10';fbq('track', 'InitiateCheckout')">COMPRAR</button>
         </div>
     </section>
     <section class="beneficios">
@@ -143,7 +144,7 @@
             </p>
         </div>
         <div class="yes">
-            <button onclick="location.href='https://payment.hotmart.com/V58884478N?checkoutMode=10'">SÍ, LO QUIERO
+            <button onclick="location.href='https://payment.hotmart.com/V58884478N?checkoutMode=10';fbq('track', 'InitiateCheckout')">SÍ, LO QUIERO
                 COMPRAR</button>
         </div>
 
