@@ -5,6 +5,8 @@
   --letra-gris: #808080;
   --azul-claro: #aadac7;
   --azul-oscuro: #80998c;
+  --negro: #000;
+  --blanco: #f8f7f7;
 }
 
 * {
@@ -86,11 +88,13 @@ header img {
   width: 100%;
   height: auto;
   text-align: center;
+  background-color: var(--negro);
+  padding: 10px;
+  color: var(--blanco);
 }
 
 .oferta h1 {
   margin: 50px 0px 15px;
-  color: var(--azul-oscuro);
   font-weight: 900;
   line-height: 2rem;
   font-family: "Lato", sans-serif;
@@ -99,7 +103,6 @@ header img {
 
 .oferta h3 {
   margin-bottom: 18px;
-  color: var(--azul-oscuro);
   font-weight: 900;
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
@@ -108,7 +111,6 @@ header img {
 
 .oferta p {
   margin: 0 auto 50px;
-  color: var(--azul-oscuro);
   font-family: "Lato", sans-serif;
   text-align: unset;
   font-weight: lighter;
@@ -237,7 +239,7 @@ header img {
 }
 
 .oficcial b {
-  /* text-decoration-line: line-through; */
+  text-decoration-line: line-through;
 }
 
 .lanzamiento {
@@ -274,6 +276,14 @@ header img {
   display: flex;
   justify-content: center;
   padding: 27px;
+}
+.content-course-black {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background: var(--negro);
+  margin-bottom: 5px;
 }
 
 .content-course {
