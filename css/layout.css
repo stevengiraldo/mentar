@@ -915,7 +915,7 @@ support for no js
   height: 100%;
 }
 .slider-text{
-  padding-top: 50px;
+  padding-top: 78px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1090,13 +1090,13 @@ a.arrow-down:hover{
 	background-color:#f9f9f9;
 }
 .section-padding-top-bottom{
-	padding-top:70px;
-	padding-bottom:70px;
+	padding-top:30px;
+	padding-bottom:30px;
 }
 
 .section-padding-top-bottom-2{
-	padding-top:35px;
-	padding-bottom:35px;
+	padding-top: 20px;
+  padding-bottom: 0px;
 }
 .section-padding-top{
 	padding-top:70px;
@@ -9947,6 +9947,10 @@ Main components
 h3, h4, h5 {
   text-transform: initial !important;
 }
+
+#title-complete {
+  display: none;
+}
 /* FIN  V2 */
 
 
@@ -9964,15 +9968,15 @@ h3, h4, h5 {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 52%;
+  top: 47%;
 }
 
 .button-buy a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 230px;
-  height: 35px;
+  width: 261px;
+  height: 52px;
   align-self: center;
   background: #f0eb95;
   border-radius: 25px;
@@ -9982,6 +9986,7 @@ h3, h4, h5 {
   align-items: center;
   color: #6D6E71;
   font-weight: 700;
+  letter-spacing: 3px;
 }
 
 /* FIN HOME v2 */
@@ -10034,7 +10039,7 @@ h3, h4, h5 {
   background-size: 50% auto;
 }
 .step-icon-hand{
-  background: url('../font/icon-step-hand.svg') center center no-repeat;
+  background: url('../font/Ic.svg') center center no-repeat;
   background-size: 50% auto;
 }
 
@@ -10078,6 +10083,7 @@ h3, h4, h5 {
 .description .description-footer p {
   text-align: center;
   margin-top: 0px;
+  max-width: 203px;
 }
 
 .description-footer .heart-icon-person {
@@ -10118,6 +10124,10 @@ h3, h4, h5 {
 
 
 /* CARDS */
+
+.cards {
+  margin: 30px auto;
+}
 
 .cards .card {
   max-width: 300px;
@@ -10160,6 +10170,23 @@ h3, h4, h5 {
   color: #6D6E71;
   font-weight: 700;
 }
+
+.button-card a {
+  max-width: 261px;
+  width: 261px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background: #C6E0B4;
+  border-radius: 25px;
+  border-style: none;
+  cursor: pointer;
+  color: #6D6E71;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
 /* END CARDS */
 
 
@@ -10176,9 +10203,20 @@ h3, h4, h5 {
 }
 
 @media only screen and (min-width: 440px) {
+  #title-complete {
+    display: block;
+  }
+
+  #home-subtitle, #home-title {
+    display: none;
+  }
   .slider-container{
     background: url('../images/mentar-hero.jpg') no-repeat center center;
     background-size: cover;
+  }
+
+  .description .description-footer p {
+    max-width: 735px;
   }
 }
 
@@ -10193,3 +10231,6 @@ h3, h4, h5 {
     max-width: 640px !important;
   }
 }
+
+
+
