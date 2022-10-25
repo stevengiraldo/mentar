@@ -9972,9 +9972,7 @@ h3, h4, h5 {
 }
 
 .button-buy a {
-  display: flex;
   justify-content: center;
-  align-items: center;
   width: 261px;
   height: 52px;
   align-self: center;
