@@ -1,7 +1,10 @@
 ﻿<!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]>
-<!--><html class="no-js" lang="es"><!--<![endif]-->
+<!-->
+<html class="no-js" lang="es">
+<!--<![endif]-->
+
 <head>
 
 	<!-- Basic Page Needs
@@ -14,21 +17,25 @@
 	<!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	
-	
+
+	<!-- Bootstrap
+	==================================================== -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="css/base.css"/>
-	<link rel="stylesheet" href="css/skeleton.css"/>
-	<link rel="stylesheet" href="css/layout.css"/>
-	<link rel="stylesheet" href="css/settings.css"/>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/skeleton.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/settings.css" />
 	<link rel="stylesheet" href="css/font-awesome.css" />
-	<link rel="stylesheet" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" href="css/animsition.min.css"/>
-	
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/animsition.min.css" />
+
 	<link rel="alternate stylesheet" type="text/css" href="css/colors/color-gold.css" title="1">
-	
+
 	<!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png">
@@ -36,46 +43,126 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180938524-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-180938524-1');
-</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180938524-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-<!-- Facebook Pixel Code -->
-<script>
-	!function(f,b,e,v,n,t,s)
-	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	n.queue=[];t=b.createElement(e);t.async=!0;
-	t.src=v;s=b.getElementsByTagName(e)[0];
-	s.parentNode.insertBefore(t,s)}(window,document,'script',
-	'https://connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '648731726116191'); 
-	fbq('track', 'PageView');
+		gtag('config', 'UA-180938524-1');
+	</script>
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '648731726116191');
+		fbq('track', 'PageView');
 	</script>
 	<noscript>
-	<img height="1" width="1" 
-	src="https://www.facebook.com/tr?id=648731726116191&ev=PageView
-	&noscript=1"/>
+		<img height="1" width="1" src="https://www.facebook.com/tr?id=648731726116191&ev=PageView
+	&noscript=1" />
 	</noscript>
 	<!-- End Facebook Pixel Code -->
-	
+
 </head>
-<body>	
+
+<body>
+
+	<!-- Modal -->
+	<div class="modal" id="staticBackdrop"  data-bs-keyboard="true" tabindex="-1">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				  
+				<section class="section grey-section section-padding-top-bottom" id="asesoria">
+
+					<div class="container input-modal">
+	
+						<div class="sixteen columns input-modal">
+							<div class="section-title">
+								<div class="subtitle main-weight main-font line-height-global">
+									Si quieres dejar de perder tiempo, energía y dinero con tu marca,
+									déjanos tus datos y te enviamos
+								</div>
+								<h3 class="font-bold line-height-global last-font">
+									LA ASESORÍA INICIAL
+								</h3>
+								<h3 class="font-bold line-height-global last-font">
+									completamente gratis
+								</h3>
+							</div>
+						</div>
+	
+						<div class="clear"></div>
+	
+						<form name="ajax-form" id="ajax-form" action="https://formspree.io/f/mrgoqbdq" method="post"
+							autocomplete="off">
+							<div class="sixteen columns input-modal">
+								<label for="name">
+									<span class="error" id="err-name">Porfa ingresa tu nombre</span>
+								</label>
+								<input name="name" id="name" type="text" required placeholder="Nombre: *" />
+							</div>
+							<div class="sixteen columns input-modal">
+								<label for="phone">
+									<span class="error" id="err-tel">Porfa ingresa tu Whatsapp</span>
+								</label>
+								<input name="phone" id="tel" type="tel" required placeholder="Whatsapp: *" />
+							</div>
+							<div class="sixteen columns input-modal">
+								<label for="email">
+									<span class="error" id="err-email">Porfa ingresa un correo electrónico</span>
+									<span class="error" id="err-emailvld">el correo electrónico no tiene un formato
+										válido</span>
+								</label>
+								<input name="email" id="email" type="email" required placeholder="Correo electrónico: *" />
+							</div>
+							<div class="sixteen columns input-modal">
+								<div id="button-con"><input type="submit" class="send_message" value="ASESORÍA GRATIS">
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="error text-align-center" id="err-form">Hubo un error validando el formulario, Porfa
+								revisa!</div>
+							<div class="error text-align-center" id="err-timedout">Hubo un error de conexión con el servidor
+								:(</div>
+							<div class="error" id="err-state"></div>
+						</form>
+	
+						<div class="clear"></div>
+	
+						<div id="ajaxsuccess">Enviado exitósamente!!</div>
+	
+					</div>
+	
+					<div class="clear"></div>
+	
+				</section>
+			</div>
+		</div>
+	</div>
+
 	<!-- Primary Page Layout
 	================================================== -->
 
 	<div class="animsition">
-	
-	<!-- MENU
-    ================================================== -->	
-	
+
+		<!-- MENU
+    ================================================== -->
 	<div class="header-top">
 	
 		<header class="cd-main-header green-section">
@@ -110,432 +197,489 @@
 		</nav> <!-- cd-nav -->
 	
 	</div>
-	
+		
+
 	<main class="cd-main-content">
-	
-	<!-- HOME SECTION
+
+			<!-- HOME SECTION
     ================================================== -->
 
-		<section class="home">
-	
-			<div class="slider-container">
-				<div class="slider-text green">
-					<span class="heart-icon"></span>
-					<h3 class="text-lowercase green third-font line-height-global" id="title-complete">
-						Te enseñamos a construir una marca con propósito
-					</h3>
-					<h3 class="text-lowercase green third-font line-height-global" id="home-title">
-						Te enseñamos a construir una marca
-					</h3>
-					<h3 class="subtitle-written text-lowercase third-font" id="home-subtitle">con PROPÓSITO</h3>
-					<p class="subtitle subtitle-v2 main-font">que te permita vivir de tu pasión y ayude a mejorar la vida de otras personas</p>
-				</div>
+			<section class="home">
 
-				<div class="button-buy">
-					<a href="#etapas" class="scroll">COMPRAR MENTORÍA</a>
-				</div>
-			</div>
-		</section>
-
-		<section class="section green-section" id="scroll-link">
-			<div class="section-steps green-section">
-				<div class="step">
-					<span class="step-icons step-icon-book"></span>
-					<p> <b>Paso 1.</b> Aprende a implementar “La ruta de marca” con nuestra mentoría.</p>
-				</div>
-				<div class="step">
-					<span class="step-icons step-icon-heart"></span>
-					<p> <b>Paso 2.</b> Crea una marca con Propósito.</p>
-				</div>
-				<div class="step">
-					<span class="step-icons step-icon-hand"></span>
-					<p> <b>Paso 3.</b> Vive de tu pasión mientras ayudas a mejorar la vida de otras personas.</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="description">
-		
-			<div class="description-paragraphs">
-				<div class="description-title">
-					<h5 class="subtitle-written text-lowercase line-height-global">¿No tienes resultados con tu marca?</h5>
-					<p class="main-font line-height-global">
-						La mayoría de los emprendedores se desgastan tomando cursos, escuchando opiniones y experimentando “teorías”
-						para intentar lograr que su marca tenga resultados. Cuando la clave está en el Propósito…
-					</p>
-				</div>
-				<h6 class="subtitle-written text-lowercase line-height-global">Sin un propósito claro:</h6>
-				<p class="line-height-global main-font">• No hay un motor fuerte para que la marca crezca sin parar.</p>
-				<p class="line-height-global main-font">• Los clientes no logran conectarse emocionalmente con tu marca.</p>
-				<p class="line-height-global main-font">• Tu crecimiento se limita por enfocarse solo en generar ingresos.</p>
-				<p class="line-height-global main-font">• Puedes estar emprendiendo en algo que quizás no te apasiona completamente.</p>
-				<p class="line-height-global main-font">• Te sientes frustrado, pierdes tiempo, energía y dinero.</p>
-				<p class="line-height-global main-font">• No hay una real contribución a la sociedad (objetivo de crear empresa).</p>
-			</div>
-		
-			<div class="description-footer">
-				<span class="step-icons heart-icon-person"></span>
-				<p class="line-height-global main-font">Con nuestra mentoría pasarás de ser un emprendedor empírico a un
-					<b> emprendedor con propósito</b>
-				</p>
-				<div class="button-buy">
-					<a href="#etapas" class="scroll">COMPRAR MENTORÍA</a>
-				</div>
-			</div>
-
-		</section>
-	
-		<section class="section section-padding-top-2" id="mentoria">
-			<div class="container">
-				<div class="sixteen columns">
-					<div class="section-title">
-						<h3><span class="subtitle-written">MENTORÍA</span> <span class="green">PERSONALIZADA</span></h3>
-						<div class="subtitle">¿Qué incluye?</div>
-					</div>
-				</div>
-				<div class="sixteen columns">
-					<div id="cd-timeline" class="cd-container">
-						
-						<div class="cd-timeline-block">
-							<div class="cd-timeline-img">&#xf00c;</div> <!-- cd-timeline-img -->
-
-							<div class="cd-timeline-content">
-								<h6>1. Ebook</h6>
-								<p>Te compartimos un Ebook con todo el conocimiento paso a paso para que lo apliques correctamente a tu marca.</p>
-							</div> <!-- cd-timeline-content -->
-						</div> <!-- cd-timeline-block -->
-
-						<div class="cd-timeline-block">
-							<div class="cd-timeline-img">&#xf15c;</div> <!-- cd-timeline-img -->
-
-							<div class="cd-timeline-content">
-								<h6>2. Plantillas</h6>
-								<p>Puedes ir aplicando lo aprendido de manera práctica sobre Las Plantillas que te enviamos.</p>
-							</div> <!-- cd-timeline-content -->
-						</div> <!-- cd-timeline-block -->
-
-						<div class="cd-timeline-block">
-							<div class="cd-timeline-img">&#xf086;</div> <!-- cd-timeline-img -->
-
-							<div class="cd-timeline-content">
-								<h6>3. Acompañamiento</h6>
-								<p>Durante toda tu mentoría tienes contacto con nosotras por medio del grupo de Whatsapp que creamos solo para tí.</p>
-							</div> <!-- cd-timeline-content -->
-						</div> <!-- cd-timeline-block -->
-
-						<div class="cd-timeline-block">
-							<div class="cd-timeline-img">&#xf073;</div> <!-- cd-timeline-img -->
-
-							<div class="cd-timeline-content">
-								<h6>4. Reunión virtual</h6>
-								<p>Tenemos reuniones virtuales de 1 hora cada una, para asesorarte y potenciar lo desarrollado en las Plantillas.</p>
-							</div> <!-- cd-timeline-content -->
-						</div> <!-- cd-timeline-block -->
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- SECTION
-				    ================================================== -->
-		<section class="section green-section section-padding-title" id="etapas">
-			<div class="container">
-				<div class="sixteen columns">
-					<div class="section-title">
-						<h4 class="third-font"><span class="subtitle-written">La mentoría</span></h4>
-						<h4 class="third-font"><span class="subtitle-written">se divide en 3 etapas</span></h4>
-						<div class="subtitle main-weight">que componen “La Ruta de marca”</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="cards">
-			<div class="container container-cards">
-				<div class="one-third column card" data-scroll-reveal="enter left move 200px over 1s after 0.8s">
-					<div class="title-card">
-						<h5 class="subtitle-written text-lowercase">Etapa 1</h5>
-					</div>
-					<div class="portfolio-box-2 grey-section">
-						<img src="images/cards/stage-1.jpg" alt="mentoria-1">
-						<h6>1. Modelo de negocio</h6>
-						<p>Aprenderás a definir tu propósito, vas a organizar y estructurar todas tus ideas, para lograr
-							diferenciarte en el mercado.</p>
-						<div class="button-card">
-							<h6>Valor $420.000</h6>
-							<!-- <button>COMPRAR MENTORÍA 1</button> -->
-						</div>
-					</div>
-				</div>
-		
-				<div class="one-third column card" data-scroll-reveal="enter left move 200px over 1s after 0.8s">
-					<div class="title-card">
-						<h5 class="subtitle-written text-lowercase">Etapa 2</h5>
-					</div>
-					<div class="portfolio-box-2 grey-section">
-						<img src="images/cards/stage-2.jpg" alt="mentoria-2">
-						<h6>2. Esencia de marca</h6>
-						<p>Aprenderás a darle una personalidad e identidad gráfica a tu marca, para lograr conectar y enamorar a tu audiencia.</p>
-						<div class="button-card">
-							<h6>Valor $420.000</h6>
-							<!-- <button>COMPRAR MENTORÍA 2</button> -->
-						</div>
-					</div>
-				</div>
-
-				<div class="one-third column card" data-scroll-reveal="enter left move 200px over 1s after 0.8s">
-					<div class="title-card">
-						<h5 class="subtitle-written text-lowercase">Etapa 3</h5>
-					</div>
-					<div class="portfolio-box-2 grey-section">
-						<img src="images/cards/stage-3.jpg" alt="mentoria-3">
-						<h6>3. Estrategia digital</h6>
-						<p>Aprenderás todo sobre comunicación estratégica, para lograr crear contenido inspirador y creativo en Instagram.</p>
-						<div class="button-card">
-							<h6>Valor $580.000</h6>
-							<!-- <button>COMPRAR MENTORÍA 3</button> -->
-						</div>
-					</div>
-				</div>
-
-				<div class="one-third column card" data-scroll-reveal="enter left move 200px over 1s after 0.8s">
-					<div class="title-card">
-						<h5 class="subtitle-written text-lowercase">Mentoría full</h5>
-					</div>
-					<div class="portfolio-box-2 grey-section">
-						<img src="images/cards/full.jpg" alt="mentoria-full">
-						<h6>Mentoría full</h6>
-						<p>Si realmente estás dispuesto a crear una marca con propósito, aprovecha nuestro descuento por tomar las 3 mentorías y ahórrate $220.000</p>
-						<div class="button-card">
-							<h6>Valor $1.200.000</h6>
-							<a href="https://api.whatsapp.com/send/?phone=573054262363&text&type=phone_number&app_absent=0" target="_blank" style="background: #f0eb95;">COMPRAR MENTORÍA</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-	<section class="description-offer" id="proposito">
-
-		<h5 class="subtitle-written text-lowercase green">Un propósito</h5>
-		<h5 class="subtitle-written text-lowercase green">mayor</h5>
-
-		<section class="section white-section section-padding-top-bottom-2" id="scroll-link-5">
-			<div class="container">
-				<div class="sixteen columns">
-					<div id="owl-blockquotes" class="owl-carousel owl-theme">
-						<div class="item blockquotes-1">
-							<img src="images/coursel/photo-1.jpg" alt="photo-1">
-						</div>
-						<div class="item blockquotes-1">
-							<img src="images/coursel/photo-2.JPG" alt="photo-2">
-						</div>
-						<div class="item blockquotes-1">
-							<img src="images/coursel/photo-3.JPG" alt="photo-3">
-						</div>
-						<div class="item blockquotes-1">
-							<img src="images/coursel/photo-4.JPG" alt="photo-4">
-						</div>
-						<div class="item blockquotes-1">
-							<img src="images/coursel/photo-5.JPG" alt="photo-5">
-						</div>
-						<div class="item blockquotes-1">
-							<img src="images/coursel/photo-6.JPG" alt="photo-6">
-						</div>
-						<div class="item blockquotes-1">
-							<img src="images/coursel/photo-7.JPG" alt="photo-7">
-						</div>
-						<div class="item blockquotes-1">
-							<img src="images/coursel/photo-8.JPG" alt="photo-8">
-						</div>
-						<div class="item blockquotes-1">
-							<img src="images/coursel/photo-9.JPG" alt="photo-9">
-						</div>
-					</div>	
-				</div>
-			</div>
-		</section>
-
-		<p class="main-font line-height-global">En Mentar, creemos que el emprendimiento con propósito es la herramienta para construir una mejor sociedad. 
-			Nuestro objetivo es aportar todo nuestro conocimiento y amor para que millones de emprendedores construyan marcas con propósito, que les permita vivir de su pasión y ayuden a mejorar la vida de otras personas.</p>
-		<p class="main-font line-height-global">Es por esto, que al comprar nuestra Mentoría, no solo adquieres el conocimiento para crear una marca con propósito. Sino que además el 10% de tu pago será destinado a nuestro programa "Pequeños creativos" donde educamos a niños de bajos recursos para despertar su espíritu emprendedor.</p>
-		<h5 class="second-font"><span class="subtitle-written">¡Hagamos doble impacto en la sociedad!</span></h5>
-		<div class="button-buy">
-			<a href="https://api.whatsapp.com/send/?phone=573054262363&text&type=phone_number&app_absent=0" target="_blank">COMPRAR MENTORÍA</a>
-		</div>
-	</section>
-	
-		<section class="section grey-section section-padding-top-bottom" id="asesoria">
-		
-			<div class="container">
-
-				<div class="sixteen columns">
-					<div class="section-title">
-						<h3 class="font-bold line-height-global last-font">
-							Si quieres aprender más sobre la ruta de marca
+				<div class="slider-container">
+					<div class="slider-text green">
+						<span class="heart-icon"></span>
+						<h3 class="text-lowercase green third-font line-height-global" id="title-complete">
+							Te enseñamos a construir una marca con propósito
 						</h3>
-						<div class="subtitle main-weight main-font line-height-global">
-							Déjanos tus datos y te enviamos una asesoría inicial completamente gratis
+						<h3 class="text-lowercase green third-font line-height-global" id="home-title">
+							Te enseñamos a construir una marca
+						</h3>
+						<h3 class="subtitle-written text-lowercase third-font" id="home-subtitle">con PROPÓSITO</h3>
+						<p class="subtitle subtitle-v2 main-font">que te permita vivir de tu pasión y ayude a mejorar la
+							vida de otras personas</p>
+					</div>
+
+					<div class="button-buy">
+						<a href="#etapas" class="scroll">COMPRAR MENTORÍA</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section green-section" id="scroll-link">
+				<div class="section-steps green-section">
+					<div class="step">
+						<span class="step-icons step-icon-book"></span>
+						<p> <b>Paso 1.</b> Aprende a implementar “La ruta de marca” con nuestra mentoría.</p>
+					</div>
+					<div class="step">
+						<span class="step-icons step-icon-heart"></span>
+						<p> <b>Paso 2.</b> Crea una marca con Propósito.</p>
+					</div>
+					<div class="step">
+						<span class="step-icons step-icon-hand"></span>
+						<p> <b>Paso 3.</b> Vive de tu pasión mientras ayudas a mejorar la vida de otras personas.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="description">
+
+				<div class="description-paragraphs">
+					<div class="description-title">
+						<h5 class="subtitle-written text-lowercase line-height-global">¿No tienes resultados con tu
+							marca?</h5>
+						<p class="main-font line-height-global">
+							La mayoría de los emprendedores se desgastan tomando cursos, escuchando opiniones y
+							experimentando “teorías”
+							para intentar lograr que su marca tenga resultados. Cuando la clave está en el Propósito…
+						</p>
+					</div>
+					<h6 class="subtitle-written text-lowercase line-height-global">Sin un propósito claro:</h6>
+					<p class="line-height-global main-font">• No hay un motor fuerte para que la marca crezca sin parar.
+					</p>
+					<p class="line-height-global main-font">• Los clientes no logran conectarse emocionalmente con tu
+						marca.</p>
+					<p class="line-height-global main-font">• Tu crecimiento se limita por enfocarse solo en generar
+						ingresos.</p>
+					<p class="line-height-global main-font">• Puedes estar emprendiendo en algo que quizás no te
+						apasiona completamente.</p>
+					<p class="line-height-global main-font">• Te sientes frustrado, pierdes tiempo, energía y dinero.
+					</p>
+					<p class="line-height-global main-font">• No hay una real contribución a la sociedad (objetivo de
+						crear empresa).</p>
+				</div>
+
+				<div class="description-footer">
+					<span class="step-icons heart-icon-person"></span>
+					<p class="line-height-global main-font">Con nuestra mentoría pasarás de ser un emprendedor empírico
+						a un
+						<b> emprendedor con propósito</b>
+					</p>
+					<div class="button-buy">
+						<a href="#etapas" class="scroll">COMPRAR MENTORÍA</a>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="section section-padding-top-2" id="mentoria">
+				<div class="container">
+					<div class="sixteen columns">
+						<div class="section-title">
+							<h3><span class="subtitle-written">MENTORÍA</span> <span class="green">PERSONALIZADA</span>
+							</h3>
+							<div class="subtitle">¿Qué incluye?</div>
+						</div>
+					</div>
+					<div class="sixteen columns">
+						<div id="cd-timeline" class="cd-container">
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">&#xf00c;</div> <!-- cd-timeline-img -->
+
+								<div class="cd-timeline-content">
+									<h6>1. Ebook</h6>
+									<p>Te compartimos un Ebook con todo el conocimiento paso a paso para que lo apliques
+										correctamente a tu marca.</p>
+								</div> <!-- cd-timeline-content -->
+							</div> <!-- cd-timeline-block -->
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">&#xf15c;</div> <!-- cd-timeline-img -->
+
+								<div class="cd-timeline-content">
+									<h6>2. Plantillas</h6>
+									<p>Puedes ir aplicando lo aprendido de manera práctica sobre Las Plantillas que te
+										enviamos.</p>
+								</div> <!-- cd-timeline-content -->
+							</div> <!-- cd-timeline-block -->
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">&#xf086;</div> <!-- cd-timeline-img -->
+
+								<div class="cd-timeline-content">
+									<h6>3. Acompañamiento</h6>
+									<p>Durante toda tu mentoría tienes contacto con nosotras por medio del grupo de
+										Whatsapp que creamos solo para tí.</p>
+								</div> <!-- cd-timeline-content -->
+							</div> <!-- cd-timeline-block -->
+
+							<div class="cd-timeline-block">
+								<div class="cd-timeline-img">&#xf073;</div> <!-- cd-timeline-img -->
+
+								<div class="cd-timeline-content">
+									<h6>4. Reunión virtual</h6>
+									<p>Tenemos reuniones virtuales de 1 hora cada una, para asesorarte y potenciar lo
+										desarrollado en las Plantillas.</p>
+								</div> <!-- cd-timeline-content -->
+							</div> <!-- cd-timeline-block -->
 						</div>
 					</div>
 				</div>
-			
+			</section>
+
+			<!-- SECTION
+				    ================================================== -->
+			<section class="section green-section section-padding-title" id="etapas">
+				<div class="container">
+					<div class="sixteen columns">
+						<div class="section-title">
+							<h4 class="third-font"><span class="subtitle-written">La mentoría</span></h4>
+							<h4 class="third-font"><span class="subtitle-written">se divide en 3 etapas</span></h4>
+							<div class="subtitle main-weight">que componen “La Ruta de marca”</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cards">
+				<div class="container container-cards">
+					<div class="one-third column card" data-scroll-reveal="enter left move 200px over 1s after 0.8s">
+						<div class="title-card">
+							<h5 class="subtitle-written text-lowercase">Etapa 1</h5>
+						</div>
+						<div class="portfolio-box-2 grey-section">
+							<img src="images/cards/stage-1.jpg" alt="mentoria-1">
+							<h6>1. Modelo de negocio</h6>
+							<p>Aprenderás a definir tu propósito, vas a organizar y estructurar todas tus ideas, para
+								lograr
+								diferenciarte en el mercado.</p>
+							<div class="button-card">
+								<h6>Valor $420.000</h6>
+								<!-- <a  href="./pdf/procedimiento.pdf" download>DESCARGAR PENSUM</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="one-third column card" data-scroll-reveal="enter left move 200px over 1s after 0.8s">
+						<div class="title-card">
+							<h5 class="subtitle-written text-lowercase">Etapa 2</h5>
+						</div>
+						<div class="portfolio-box-2 grey-section">
+							<img src="images/cards/stage-2.jpg" alt="mentoria-2">
+							<h6>2. Esencia de marca</h6>
+							<p>Aprenderás a darle una personalidad e identidad gráfica a tu marca, para lograr conectar
+								y enamorar a tu audiencia.</p>
+							<div class="button-card">
+								<h6>Valor $420.000</h6>
+								<!-- <a href="https://wa.link/fej1bl" target="_blank">COMPRAR MENTORÍA 2</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="one-third column card" data-scroll-reveal="enter left move 200px over 1s after 0.8s">
+						<div class="title-card">
+							<h5 class="subtitle-written text-lowercase">Etapa 3</h5>
+						</div>
+						<div class="portfolio-box-2 grey-section">
+							<img src="images/cards/stage-3.jpg" alt="mentoria-3">
+							<h6>3. Estrategia digital</h6>
+							<p>Aprenderás todo sobre comunicación estratégica, para lograr crear contenido inspirador y
+								creativo en Instagram.</p>
+							<div class="button-card">
+								<h6>Valor $580.000</h6>
+								<!-- <button>COMPRAR MENTORÍA 3</button> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="one-third column card" data-scroll-reveal="enter left move 200px over 1s after 0.8s">
+						<div class="title-card">
+							<h5 class="subtitle-written text-lowercase">Mentoría full</h5>
+						</div>
+						<div class="portfolio-box-2 grey-section">
+							<img src="images/cards/full.jpg" alt="mentoria-full">
+							<h6>Mentoría full</h6>
+							<p>Si realmente estás dispuesto a crear una marca con propósito, aprovecha nuestro descuento
+								por tomar las 3 mentorías y ahórrate $220.000</p>
+							<div class="button-card">
+								<h6>Valor $1.200.000</h6>
+								<a href="https://wa.link/lsj1o4" target="_blank" style="background: #f0eb95;">COMPRAR
+									MENTORÍA</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="description-offer" id="proposito">
+
+				<h5 class="subtitle-written text-lowercase green">Un propósito</h5>
+				<h5 class="subtitle-written text-lowercase green">mayor</h5>
+
+				<div class="purpose-content">
+					<section class="section white-section section-padding-top-bottom-2" id="scroll-link-5">
+						<div class="container">
+							<div class="sixteen columns">
+								<div id="owl-blockquotes" class="owl-carousel owl-theme">
+									<div class="item blockquotes-1">
+										<img src="images/coursel/photo-1.jpg" alt="photo-1">
+									</div>
+									<div class="item blockquotes-1">
+										<img src="images/coursel/photo-2.JPG" alt="photo-2">
+									</div>
+									<div class="item blockquotes-1">
+										<img src="images/coursel/photo-3.JPG" alt="photo-3">
+									</div>
+									<div class="item blockquotes-1">
+										<img src="images/coursel/photo-4.JPG" alt="photo-4">
+									</div>
+									<div class="item blockquotes-1">
+										<img src="images/coursel/photo-5.JPG" alt="photo-5">
+									</div>
+									<div class="item blockquotes-1">
+										<img src="images/coursel/photo-6.JPG" alt="photo-6">
+									</div>
+									<div class="item blockquotes-1">
+										<img src="images/coursel/photo-7.JPG" alt="photo-7">
+									</div>
+									<div class="item blockquotes-1">
+										<img src="images/coursel/photo-8.JPG" alt="photo-8">
+									</div>
+									<div class="item blockquotes-1">
+										<img src="images/coursel/photo-9.JPG" alt="photo-9">
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="purpose-paragraph">
+						<p class="main-font line-height-global">En Mentar, creemos que el emprendimiento con propósito
+							es la
+							herramienta para construir una mejor sociedad.
+							Nuestro objetivo es aportar todo nuestro conocimiento y amor para que millones de
+							emprendedores
+							construyan marcas con propósito, que les permita vivir de su pasión y ayuden a mejorar la
+							vida de otras
+							personas.</p>
+						<p class="main-font line-height-global">Es por esto, que al comprar nuestra Mentoría, no solo
+							adquieres el
+							conocimiento para crear una marca con propósito. Sino que además el 10% de tu pago será
+							destinado a
+							nuestro programa "Pequeños creativos" donde educamos a niños de bajos recursos para
+							despertar su
+							espíritu emprendedor.</p>
+						<h5 class="second-font"><span class="subtitle-written">¡Hagamos doble impacto en la
+								sociedad!</span></h5>
+						<div class="button-buy">
+							<a href="https://api.whatsapp.com/send/?phone=573054262363&text&type=phone_number&app_absent=0"
+								target="_blank">COMPRAR MENTORÍA</a>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="section grey-section section-padding-top-bottom" id="asesoria">
+
+				<div class="container">
+
+					<div class="sixteen columns">
+						<div class="section-title">
+							<div class="subtitle main-weight main-font line-height-global">
+								Si quieres dejar de perder tiempo, energía y dinero con tu marca,
+								déjanos tus datos y te enviamos
+							</div>
+							<h3 class="font-bold line-height-global last-font">
+								LA ASESORÍA INICIAL
+							</h3>
+							<h3 class="font-bold line-height-global last-font">
+								completamente gratis
+							</h3>
+						</div>
+					</div>
+
+					<div class="clear"></div>
+
+					<form name="ajax-form" id="ajax-form" action="https://formspree.io/f/mrgoqbdq" method="post"
+						autocomplete="off">
+						<div class="sixteen columns">
+							<label for="name">
+								<span class="error" id="err-name">Porfa ingresa tu nombre</span>
+							</label>
+							<input name="name" id="name" type="text" required placeholder="Nombre: *" />
+						</div>
+						<div class="sixteen columns">
+							<label for="phone">
+								<span class="error" id="err-tel">Porfa ingresa tu Whatsapp</span>
+							</label>
+							<input name="phone" id="tel" type="tel" required placeholder="Whatsapp: *" />
+						</div>
+						<div class="sixteen columns">
+							<label for="email">
+								<span class="error" id="err-email">Porfa ingresa un correo electrónico</span>
+								<span class="error" id="err-emailvld">el correo electrónico no tiene un formato
+									válido</span>
+							</label>
+							<input name="email" id="email" type="email" required placeholder="Correo electrónico: *" />
+						</div>
+						<div class="sixteen columns">
+							<div id="button-con"><input type="submit" class="send_message" value="ASESORÍA GRATIS">
+							</div>
+						</div>
+						<div class="clear"></div>
+						<div class="error text-align-center" id="err-form">Hubo un error validando el formulario, Porfa
+							revisa!</div>
+						<div class="error text-align-center" id="err-timedout">Hubo un error de conexión con el servidor
+							:(</div>
+						<div class="error" id="err-state"></div>
+					</form>
+
+					<div class="clear"></div>
+
+					<div id="ajaxsuccess">Enviado exitósamente!!</div>
+
+				</div>
+
 				<div class="clear"></div>
-				
-				<form name="ajax-form" id="ajax-form" action="https://formspree.io/f/mrgoqbdq" method="post" autocomplete="off">
-					<div class="sixteen columns">
-						<label for="name"> 
-							<span class="error" id="err-name">Porfa ingresa tu nombre</span>
-						</label>
-						<input name="name" id="name" type="text" required placeholder="Nombre: *"/>
-					</div>
-					<div class="sixteen columns">
-						<label for="phone"> 
-							<span class="error" id="err-tel">Porfa ingresa tu Whatsapp</span>
-						</label>
-						<input name="phone" id="tel" type="tel" required placeholder="Whatsapp: *"/>
-					</div>
-					<div class="sixteen columns">
-						<label for="email"> 
-							<span class="error" id="err-email">Porfa ingresa un correo electrónico</span>
-							<span class="error" id="err-emailvld">el correo electrónico no tiene un formato válido</span>
-						</label>
-						<input name="email" id="email" type="email" required placeholder="Correo electrónico: *"/>
-					</div>
-					<div class="sixteen columns">
-						<div id="button-con"><input type="submit" class="send_message" value="QUIERO LA ASESORÍA"></div>
-					</div>
-					<div class="clear"></div>	
-					<div class="error text-align-center" id="err-form">Hubo un error validando el formulario, Porfa revisa!</div>
-					<div class="error text-align-center" id="err-timedout">Hubo un error de conexión con el servidor :(</div>
-					<div class="error" id="err-state"></div>
-				</form>	
-				
-				<div class="clear"></div>
-				
-				<div id="ajaxsuccess">Enviado exitósamente!!</div>
-				
-			</div>
-			
-			<div class="clear"></div>
-				
-		</section>
 
-	<!-- FOOTER
-    ================================================== -->	
-	
-		<section class="section footer-1 grey-dark-section section-padding-top-bottom-2" id="contacto">	
-			<div class="container footer">
-				<div class="four columns section-padding-bottom-2" data-scroll-reveal="enter left move 200px over 0.5s after 0.8s">
-					<div class="logo-footer"></div>
+			</section>
+
+			<!-- FOOTER
+    ================================================== -->
+
+			<section class="section footer-1 grey-dark-section section-padding-top-bottom-2" id="contacto">
+				<div class="container footer">
+					<div class="four columns section-padding-bottom-2"
+						data-scroll-reveal="enter left move 200px over 0.5s after 0.8s">
+						<div class="logo-footer"></div>
+					</div>
+					<div class="four columns" data-scroll-reveal="enter left move 200px over 0.5s after 0.3s">
+						<h6>Whatsapp</h6>
+						<p class="list-social"><a href="https://wa.me/+573054262363" target="_blank">+57 305 426 23
+								63</a><br />
+							Te habla Kathe</p>
+					</div>
+					<div class="four columns" data-scroll-reveal="enter right move 200px over 0.5s after 0.3s">
+						<h6>Instagram</h6>
+						<p class="list-social"><a href="https://instagram.com/mentar_"
+								target="_blank">@mentar_</a><br />
+							Te habla Angy</p>
+					</div>
+					<div class="four columns" data-scroll-reveal="enter right move 200px over 0.5s after 0.8s">
+						<p><i class="icon-footer">&#xf0e0;</i><a href="mailto:mentarcol@gmail.com"
+								title="">mentarcol@gmail.com</a></p>
+					</div>
 				</div>
-				<div class="four columns" data-scroll-reveal="enter left move 200px over 0.5s after 0.3s">
-					<h6>Whatsapp</h6>
-					<p class="list-social"><a href="https://wa.me/+573054262363" target="_blank">+57 305 426 23 63</a><br/>
-					Te habla Kathe</p>
+			</section>
+			<section class="section footer-bottom">
+				<div class="container">
+					<div class="sixteen columns">
+						<p>© TODOS LOS DERECHOS RESERVADOS. MENTAR 2022</p>
+					</div>
 				</div>
-				<div class="four columns" data-scroll-reveal="enter right move 200px over 0.5s after 0.3s">
-					<h6>Instagram</h6>
-					<p class="list-social"><a href="https://instagram.com/mentar_" target="_blank">@mentar_</a><br/>
-					Te habla Angy</p>
-				</div>
-				<div class="four columns" data-scroll-reveal="enter right move 200px over 0.5s after 0.8s">
-					<p><i class="icon-footer">&#xf0e0;</i><a href="mailto:mentarcol@gmail.com" title="">mentarcol@gmail.com</a></p>
-				</div>	
-			</div>
-		</section>
-		<section class="section footer-bottom">	
-			<div class="container">
-				<div class="sixteen columns">
-					<p>© TODOS LOS DERECHOS RESERVADOS. MENTAR 2022</p>
-				</div>	
-			</div>
-		</section>
+			</section>
 
+		</main>
 
+		<div class="scroll-to-top">&#xf106;</div>
 
-		
-	</main>		
-
-	<div class="scroll-to-top">&#xf106;</div>
-	
-	
 	</div>
-	
-	
-		
+
+
 	<!-- JAVASCRIPT
     ================================================== -->
-<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
-<script type="text/javascript" src="js/modernizr.custom.js"></script> 
-<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
-<script type="text/javascript" src="js/jquery.animsition.min.js"></script>
-<script type="text/javascript">
-(function($) { "use strict";
-	$(document).ready(function() {
-	  
-	  $(".animsition").animsition({
-	  
-		inClass               :   'zoom-in-sm',
-		outClass              :   'zoom-out-sm',
-		inDuration            :    1500,
-		outDuration           :    800,
-		linkElement           :   '.animsition-link', 
-		// e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
-		loading               :    true,
-		loadingParentElement  :   'body', //animsition wrapper element
-		loadingClass          :   'animsition-loading',
-		unSupportCss          : [ 'animation-duration',
-								  '-webkit-animation-duration',
-								  '-o-animation-duration'
-								],
-		//"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser. 
-		//The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-		
-		overlay               :   false,
-		
-		overlayClass          :   'animsition-overlay-slide',
-		overlayParentElement  :   'body'
-	  });
-	});  
-})(jQuery);
-</script>
-<script type="text/javascript" src="js/jquery.easing.js"></script>	
-<script type="text/javascript" src="js/smoothScroll.js"></script>
-<script type="text/javascript" src="js/waypoints.min.js"></script>
-<script type="text/javascript" src="js/scrollReveal.js"></script>
-<script type="text/javascript">
-(function($) { "use strict";
-      window.scrollReveal = new scrollReveal();
-})(jQuery);
-</script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript"> 
-(function($) { "use strict";          
-			jQuery(document).ready(function() {
+	<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.animsition.min.js"></script>
+	<script type="text/javascript">
+		(function ($) {
+			"use strict";
+			$(document).ready(function () {
+
+				// setTimeout(() => {
+
+					$('#staticBackdrop').modal('show');
+
+				// }, 10000);
+
+				$(".animsition").animsition({
+
+					inClass: 'zoom-in-sm',
+					outClass: 'zoom-out-sm',
+					inDuration: 1500,
+					outDuration: 800,
+					linkElement: '.animsition-link',
+					// e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+					loading: true,
+					loadingParentElement: 'body', //animsition wrapper element
+					loadingClass: 'animsition-loading',
+					unSupportCss: ['animation-duration',
+						'-webkit-animation-duration',
+						'-o-animation-duration'
+					],
+					//"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser. 
+					//The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+
+					overlay: false,
+
+					overlayClass: 'animsition-overlay-slide',
+					overlayParentElement: 'body'
+				});
+			});
+		})(jQuery);
+	</script>
+	<script type="text/javascript" src="js/jquery.easing.js"></script>
+	<script type="text/javascript" src="js/smoothScroll.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/scrollReveal.js"></script>
+	<script type="text/javascript">
+		(function ($) {
+			"use strict";
+			window.scrollReveal = new scrollReveal();
+		})(jQuery);
+	</script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript">
+		(function ($) {
+			"use strict";
+			jQuery(document).ready(function () {
 				var offset = 450;
 				var duration = 500;
-				jQuery(window).scroll(function() {
+				jQuery(window).scroll(function () {
 					if (jQuery(this).scrollTop() > offset) {
 						jQuery('.scroll-to-top').fadeIn(duration);
 					} else {
 						jQuery('.scroll-to-top').fadeOut(duration);
 					}
 				});
-				
-				jQuery('.scroll-to-top').click(function(event) {
+
+				jQuery('.scroll-to-top').click(function (event) {
 					event.preventDefault();
-					jQuery('html, body').animate({scrollTop: 0}, duration);
+					jQuery('html, body').animate({ scrollTop: 0 }, duration);
 					return false;
 				})
 			});
-})(jQuery);
-</script>
-<script type="text/javascript" src="js/smk-accordion.js"></script>
-<script type="text/javascript" src="js/jquery.fitvids.js"></script>
-<script type="text/javascript" src="js/styleswitcher.js"></script>
-<script type="text/javascript" src="js/index.js"></script>  	  
-<!-- End Document
+		})(jQuery);
+	</script>
+	<script type="text/javascript" src="js/smk-accordion.js"></script>
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="js/styleswitcher.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<!-- End Document
 ================================================== -->
 </body>
+
 </html>
