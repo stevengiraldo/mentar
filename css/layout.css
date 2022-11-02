@@ -9105,10 +9105,6 @@ Main components
     -moz-transition: color 0.3s, box-shadow 0.3s;
     transition: color 0.3s, box-shadow 0.3s;
   }
-  .cd-primary-nav > li > a:hover {
-  }
-  .cd-primary-nav > li > a.selected {
-  }
   .cd-primary-nav .go-back, .cd-primary-nav .see-all {
     display: none;
   }
@@ -10194,13 +10190,21 @@ h3, h4, h5 {
   }
 }
 
-@media only screen and (min-width: 440px) {
-  #title-complete {
-    display: block;
-  }
+#home-subtitle, #home-title {
+  display: block;
+}
 
+#title-complete {
+  display: none;
+}
+
+@media only screen and (min-width: 440px) {
   #home-subtitle, #home-title {
     display: none;
+  }
+
+  #title-complete {
+    display:block;
   }
   .slider-container{
     background: url('../images/mentar-hero.jpg') no-repeat center center;
