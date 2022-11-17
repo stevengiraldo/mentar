@@ -1086,6 +1086,10 @@ a.arrow-down:hover{
 	color:#f0f0f0;
 }
 
+.grey {
+  color: #6D6E71;
+}
+
 .grey-2-section{
 	background-color:#f9f9f9;
 }
@@ -5991,7 +5995,7 @@ a.quote-big-post-single h5:hover{
     font-family: 'Montserrat', sans-serif;
 	/* text-transform: uppercase; */
 	font-weight: 700;
-	color: #6D6E71;
+	color: white;
 	font-size:16px;
 	line-height:28px;
 	display: block;
@@ -6002,9 +6006,9 @@ a.quote-big-post-single h5:hover{
     -ms-transition: all 300ms linear;
     transition: all 300ms linear;
 }
-.smk_accordion .accordion_in .acc_head:hover {
+/* .smk_accordion .accordion_in .acc_head:hover {
 	color:#fff;
-}
+} */
 .smk_accordion .accordion_in.acc_active > .acc_head {
 	color:#fff;
 }
@@ -6016,7 +6020,7 @@ a.quote-big-post-single h5:hover{
 	right: 20px;
 	top: 50%;
 	margin-top: -15px;
-	background: url('../images/acc1.png') no-repeat center center;
+	background: url('../images/acc2.png') no-repeat center center;
 }
 .smk_accordion .accordion_in .acc_head:hover .acc_icon_expand {
 	background: url('../images/acc2.png') no-repeat center center;
@@ -10136,12 +10140,19 @@ h3, h4, h5 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 20px;
   margin-top: 10px;
 }
 
 .cards .button-card h6 {
   padding: 0;
+  margin-bottom: 6px;
+}
+
+.cards .button-card p {
+  text-decoration: line-through;
+  font-weight: 400;
+  padding: 0px;
+  min-height: 25px;
 }
 
 .button-card button {
@@ -10167,13 +10178,50 @@ h3, h4, h5 {
   justify-content: center;
   align-items: center;
   align-self: center;
-  background: #C6E0B4;
+  background: #f0eb95;
+  margin-bottom: 20px;
   border-radius: 25px;
   border-style: none;
   cursor: pointer;
   color: #6D6E71;
   font-weight: 700;
   letter-spacing: 3px;
+}
+
+.modal-image {
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.watch-image-modal {
+  text-decoration: underline;
+  font-weight: 400;
+  min-height: 0px !important;
+}
+
+.watch-image-modal:hover {
+  color: #C6E0B4;
+  cursor: pointer;
+}
+#modal1 .image-modal {
+  background: url("../images/pensum-1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#modal2 .image-modal {
+  background: url("../images/pensum-2.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#modal3 .image-modal {
+  background: url("../images/pensum-3.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.image-modal {
+  height: 485px;
 }
 /* END CARDS */
 
@@ -10214,6 +10262,10 @@ h3, h4, h5 {
   .description .description-footer p {
     max-width: 735px;
   }
+
+  .image-modal {
+    height: 530px;
+  }
 }
 
 @media only screen and (min-width: 644px) {
@@ -10234,6 +10286,10 @@ h3, h4, h5 {
   .modal-content form {
     padding: 0px 50px;
   }
+
+  .image-modal {
+    height: 580px;
+  }
 }
 
 /* MODAL */
@@ -10251,3 +10307,16 @@ h3, h4, h5 {
 .btn-close:hover {
   background: none;
 }
+
+/* FIN MODAL */
+
+/* ACORDION */
+
+.accordion-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FIN ACORDION */

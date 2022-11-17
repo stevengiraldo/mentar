@@ -156,12 +156,12 @@ a.arrow-down:hover{
 .list-social li.icon-soc a {
 	color: #C6E0B4;
 }
-.smk_accordion .accordion_in .acc_head:hover {
+/* .smk_accordion .accordion_in .acc_head:hover {
 	background:#C6E0B4;
-}
-.smk_accordion .accordion_in.acc_active > .acc_head {
+} */
+/* .smk_accordion .accordion_in.acc_active > .acc_head {
 	background:#C6E0B4;
-}
+} */
 .blog-box-1 .blog-date-1{
 	background:#C6E0B4;
 }
